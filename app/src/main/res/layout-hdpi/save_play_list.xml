@@ -1,0 +1,80 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/create_new_playlist"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="@drawable/main_background"
+    android:orientation="vertical"
+    android:visibility="visible"
+    android:weightSum="6">
+
+    <TextView
+        android:id="@+id/save_playlis_as_heading"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:text="Save Playlist"
+        android:textColor="@color/primary_text"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:paddingLeft="5dp"
+        android:paddingRight="10dp"
+        android:weightSum="5">
+
+        <TextView
+            android:id="@+id/save_playlist_name"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Name"
+            android:textColor="@color/primary_text" />
+
+        <EditText
+            android:id="@+id/et_play_list_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:backgroundTint="@color/primary_text"
+            android:gravity="center_vertical"
+            android:textColor="@color/primary_text" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/btn_playlist_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Cancel"
+            android:textColor="@color/primary_text"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/btn_playlist_done"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Done"
+            android:textColor="@color/primary_text"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/equalizer_main_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background"
+    tools:context=".Activity.EqualizerActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="12">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/equalizer_heading"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="9"
+                android:gravity="center"
+                android:text="Equalizer"
+                android:textColor="@color/primary_text"
+                android:textSize="16sp" />
+
+            <ImageButton
+                android:id="@+id/equalizer_on_off_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_weight="1"
+                android:background="@null"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:src="@drawable/switch_selected" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/border_black" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/equalizer_body"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="11"
+            android:orientation="vertical"
+            android:weightSum="480">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="40"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/eq_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/spinner_background"
+                    android:gravity="center"
+                    android:popupBackground="@drawable/main_background" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="260"
+                android:orientation="vertical"
+                android:weightSum="200">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="180"
+                    android:orientation="horizontal"
+                    android:weightSum="5">
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <com.mp3.musicplayer.CustomView.VerticalSeekBar
+                            android:id="@+id/eq_band1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:progress="0"
+                            android:progressDrawable="@drawable/equalizer_band_progress_bakground"
+                            android:thumb="@drawable/seekbar_tumb" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <com.mp3.musicplayer.CustomView.VerticalSeekBar
+                            android:id="@+id/eq_band2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:progress="0"
+                            android:progressDrawable="@drawable/equalizer_band_progress_bakground"
+                            android:thumb="@drawable/seekbar_tumb"
+
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <com.mp3.musicplayer.CustomView.VerticalSeekBar
+                            android:id="@+id/eq_band3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:progress="0"
+                            android:progressDrawable="@drawable/equalizer_band_progress_bakground"
+                            android:thumb="@drawable/seekbar_tumb"
+
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <com.mp3.musicplayer.CustomView.VerticalSeekBar
+                            android:id="@+id/eq_band4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:progress="0"
+                            android:progressDrawable="@drawable/equalizer_band_progress_bakground"
+                            android:thumb="@drawable/seekbar_tumb" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <com.mp3.musicplayer.CustomView.VerticalSeekBar
+                            android:id="@+id/eq_band5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:progress="0"
+                            android:progressDrawable="@drawable/equalizer_band_progress_bakground"
+                            android:thumb="@drawable/seekbar_tumb" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="20"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="5">
+
+                    <TextView
+                        android:id="@+id/freq_band1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="00"
+                        android:textColor="@color/equalizer_text_color" />
+
+                    <TextView
+                        android:id="@+id/freq_band2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="00"
+                        android:textColor="@color/equalizer_text_color" />
+
+                    <TextView
+                        android:id="@+id/freq_band3"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="310"
+                        android:textColor="@color/equalizer_text_color" />
+
+                    <TextView
+                        android:id="@+id/freq_band4"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="600"
+                        android:textColor="@color/equalizer_text_color" />
+
+                    <TextView
+                        android:id="@+id/freq_band5"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="1K"
+                        android:textColor="@color/equalizer_text_color" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="180"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="20dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:weightSum="10">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="8"
+                        android:gravity="center"
+                        android:orientation="vertical"
+
+                        >
+
+                        <LinearLayout
+                            android:id="@+id/ll_bass_bakground"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:background="@drawable/bass"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <com.mp3.musicplayer.CustomView.CircularSeekBar
+                                android:id="@+id/bass_bar_control"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="12dp"
+                                android:background="@null"
+                                app:circle_color="#00ffffff"
+                                app:circle_progress_color="#00ffffff"
+                                app:end_angle="45"
+                                app:pointer_alpha_ontouch="1"
+                                app:pointer_color="#ffff0000"
+                                app:pointer_halo_border_width="0dp"
+                                app:pointer_halo_color="#00ffffff"
+                                app:pointer_halo_color_ontouch="#00ffffff"
+                                app:pointer_halo_width="0dp"
+                                app:pointer_radius="2dp"
+                                app:start_angle="140" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:gravity="center_horizontal"
+                        android:text="BASS"
+                        android:textColor="@color/primary_text"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="20dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:weightSum="10">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="8"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/ll_virtualizer_bakground"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:background="@drawable/virtualizer"
+                            android:orientation="vertical">
+
+                            <com.mp3.musicplayer.CustomView.CircularSeekBar
+                                android:id="@+id/virtualizer_bar_control"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="12dp"
+                                android:background="@null"
+                                app:circle_color="#00ffffff"
+                                app:circle_progress_color="#00ffffff"
+                                app:end_angle="45"
+                                app:pointer_alpha_ontouch="1"
+                                app:pointer_color="#ff0000ff"
+                                app:pointer_halo_border_width="0dp"
+                                app:pointer_halo_color="#00ffffff"
+                                app:pointer_halo_color_ontouch="#00ffffff"
+                                app:pointer_halo_width="0dp"
+                                app:pointer_radius="2dp"
+                                app:start_angle="140" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:gravity="center_horizontal"
+                        android:text="VIRTUALIZER"
+                        android:textColor="@color/primary_text"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

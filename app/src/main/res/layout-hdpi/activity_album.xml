@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background"
+    android:fitsSystemWindows="true">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/MyAppbar"
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:background="@color/null_color"
+        android:fitsSystemWindows="true">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/collapse_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <LinearLayout
+                android:id="@+id/album_top_view"
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
+                android:orientation="vertical"
+                android:visibility="visible"
+                android:weightSum="270">
+                <!--album name-->
+                <TextView
+                    android:id="@+id/album_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="35"
+                    android:ellipsize="marquee"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/primary_text"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="210"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/album_album_art"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="7dp"
+                            android:src="@drawable/round_image" />
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <!--Total track-->
+                <TextView
+                    android:id="@+id/album_total_track"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="25"
+                    android:layout_marginBottom="@dimen/size_15dp"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text=""
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/album_secondary_text" />
+
+            </LinearLayout>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrool_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="0"
+                android:background="@color/common_border_color2" />
+
+            <LinearLayout
+                android:id="@+id/album_button_holder"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@null"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_album_normal_landing"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:visibility="visible"
+                    android:weightSum="6">
+
+                    <ImageButton
+                        android:id="@+id/btn_album_app_share"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:src="@drawable/btn_share" />
+
+                    <ImageButton
+                        android:id="@+id/btn_album_equalizer"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:src="@drawable/btn_equalizer" />
+
+                    <ImageButton
+                        android:id="@+id/btn_album_sort_type"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:src="@drawable/btn_sort_type" />
+
+                    <ImageButton
+                        android:id="@+id/btn_album_play"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:src="@drawable/btn_play" />
+
+                    <ImageButton
+                        android:id="@+id/btn_album_search"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:src="@drawable/btn_search" />
+
+                    <ImageButton
+                        android:id="@+id/btn_album_setting"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:src="@drawable/btn_setting" />
+
+                </LinearLayout>
+                <!-- search-->
+                <LinearLayout
+                    android:id="@+id/ll_album_search_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginBottom="6dp"
+                    android:background="@drawable/searchbakground"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    android:weightSum="10">
+
+                    <ImageButton
+                        android:id="@+id/btn_album_search_text"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:src="@drawable/search_without_background" />
+
+                    <EditText
+                        android:id="@+id/et_album_search_text"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="8"
+                        android:background="@null"
+                        android:hint="Search"
+                        android:imeOptions="actionSearch"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:textColor="@color/primary_text"
+                        android:textColorHint="@color/search_hint_color" />
+
+                    <ImageButton
+                        android:id="@+id/btn_album_search_close"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:src="@drawable/delete_small" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:background="@drawable/button_shadow" />
+
+            <LinearLayout
+                android:id="@+id/album_song_menu_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/album_list_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null">
+
+                    </androidx.recyclerview.widget.RecyclerView>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

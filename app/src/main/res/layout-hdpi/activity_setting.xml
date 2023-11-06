@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/setting_main_holder"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background"
+    tools:context="com.mp3.musicplayer.Activity.SettingActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="11">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_setting_heading"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Settings"
+                android:textColor="@color/primary_text"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/border_black" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:visibility="visible"
+            android:weightSum="15">
+
+            <TextView
+                android:id="@+id/tv_language"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:gravity="center_vertical"
+                android:text="Language"
+                android:textColor="@color/primary_text"
+                android:textSize="16sp" />
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/tv_setting_rewards"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="0dp"-->
+            <!--                android:layout_weight="2"-->
+            <!--                android:gravity="center_vertical"-->
+            <!--                android:text="Rewards"-->
+            <!--                android:textColor="@color/primary_text"-->
+            <!--                android:textSize="16sp" />-->
+
+
+            <TextView
+                android:id="@+id/tv_sleep_timer"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:gravity="center_vertical"
+                android:text="Sleep Timer"
+                android:visibility="gone"
+                android:textColor="@color/primary_text"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_filter_clip"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:gravity="center_vertical"
+                android:text="Filter Short Clips"
+                android:visibility="gone"
+                android:textColor="@color/primary_text"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_setting_invite_friend"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:visibility="gone"
+                android:gravity="center_vertical"
+                android:text="Invite Friends"
+                android:textColor="@color/primary_text"
+                android:textSize="16sp" />
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/tv_setting_feedback"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="0dp"-->
+            <!--                android:layout_weight="2"-->
+            <!--                android:gravity="center_vertical"-->
+            <!--                android:text="Feedback"-->
+            <!--                android:textColor="@color/primary_text"-->
+            <!--                android:textSize="16sp" />-->
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/tv_setting_term_and_priacy"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="0dp"-->
+            <!--                android:layout_weight="2"-->
+            <!--                android:gravity="center_vertical"-->
+            <!--                android:text="Terms and Privacy"-->
+            <!--                android:textColor="@color/primary_text"-->
+            <!--                android:textSize="16sp" />-->
+
+            <TextView
+                android:id="@+id/tv_setting_rate_us"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:gravity="center_vertical"
+                android:text="Rate Us"
+                android:textColor="@color/primary_text"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

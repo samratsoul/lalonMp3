@@ -1,0 +1,174 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/recording_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/langage_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/main_background"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/language_heading"
+            android:layout_width="@dimen/size_340dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:text="Language"
+            android:textColor="@color/primary_text"
+            android:textSize="16sp" />
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:layout_marginBottom="30dp">
+
+                <RadioGroup
+                    android:id="@+id/rb_group_language"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RadioButton
+                        android:id="@+id/rb_language_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/primary_text"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="15dp"
+                        android:paddingRight="10dp"
+                        android:paddingBottom="15dp"
+                        android:text="English"
+                        android:textColor="@color/primary_text" />
+
+                    <RadioButton
+                        android:id="@+id/rb_language_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/primary_text"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="15dp"
+                        android:paddingRight="10dp"
+                        android:paddingBottom="15dp"
+                        android:text="हिंदी"
+                        android:textColor="@color/primary_text" />
+
+                    <RadioButton
+                        android:id="@+id/rb_language_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/primary_text"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="15dp"
+                        android:paddingRight="10dp"
+                        android:paddingBottom="15dp"
+                        android:text="français"
+                        android:textColor="@color/primary_text" />
+
+                    <RadioButton
+                        android:id="@+id/rb_language_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/primary_text"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="15dp"
+                        android:paddingRight="10dp"
+                        android:paddingBottom="15dp"
+                        android:text="Deutsche"
+                        android:textColor="@color/primary_text" />
+
+                    <RadioButton
+                        android:id="@+id/rb_language_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/primary_text"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="15dp"
+                        android:paddingRight="10dp"
+                        android:paddingBottom="15dp"
+                        android:text="中文"
+                        android:textColor="@color/primary_text" />
+
+                    <RadioButton
+                        android:id="@+id/rb_language_6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/primary_text"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="15dp"
+                        android:paddingRight="10dp"
+                        android:paddingBottom="15dp"
+                        android:text="Español"
+                        android:textColor="@color/primary_text" />
+
+                    <RadioButton
+                        android:id="@+id/rb_language_7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/primary_text"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="15dp"
+                        android:paddingRight="10dp"
+                        android:paddingBottom="15dp"
+                        android:text="日本語"
+                        android:textColor="@color/primary_text" />
+
+                    <RadioButton
+
+                        android:id="@+id/rb_language_8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/primary_text"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="15dp"
+                        android:paddingRight="10dp"
+                        android:paddingBottom="15dp"
+                        android:text="русский"
+                        android:textColor="@color/primary_text" />
+
+                    <RadioButton
+                        android:id="@+id/rb_language_9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/primary_text"
+                        android:gravity="center_vertical|left"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="15dp"
+                        android:paddingRight="10dp"
+                        android:paddingBottom="15dp"
+                        android:text="العربية"
+                        android:textColor="@color/primary_text" />
+
+                    <RadioButton
+                        android:id="@+id/rb_language_10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/primary_text"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="15dp"
+                        android:paddingRight="10dp"
+                        android:paddingBottom="15dp"
+                        android:text="português"
+                        android:textColor="@color/primary_text" />
+                </RadioGroup>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

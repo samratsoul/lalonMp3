@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/play_list_menu"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    android:background="@drawable/main_background"
+    android:orientation="vertical"
+    android:visibility="visible"
+    android:weightSum="10">
+
+    <TextView
+        android:id="@+id/add_to_playList_heading"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Add to Playlist"
+        android:textColor="@color/primary_text"
+        android:textSize="20sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:gravity="center"
+        android:paddingLeft="5dp"
+        android:paddingRight="10dp"
+        android:weightSum="5">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/play_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </RelativeLayout>
+
+</LinearLayout>

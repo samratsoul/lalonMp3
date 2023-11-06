@@ -1,0 +1,374 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:recyclerviewfastscroller="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mp3.musicplayer.Fragments.SongFragmement">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--Main frame-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="435">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="70"
+                android:orientation="vertical"
+                android:visibility="visible"
+                android:weightSum="70">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/common_border_color2" />
+
+                <!--song play menu-->
+                <LinearLayout
+                    android:id="@+id/songs_play_menu"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="68"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:visibility="gone"
+                    android:weightSum="10">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="8"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/songs_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:maxLines="1"
+                            android:text=""
+                            android:textColor="@color/primary_text"
+                            android:textSize="@dimen/songs_heading"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/songs_artist"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:maxLines="1"
+                            android:text=""
+                            android:textColor="@color/primary_text" />
+                    </LinearLayout>
+
+                    <ImageButton
+                        android:id="@+id/songs_play"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="@null"
+                        android:src="@drawable/song_play_pause" />
+                </LinearLayout>
+
+                <!--total song-->
+                <TextView
+                    android:id="@+id/tv_total_song_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="68"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="0"
+                    android:textColor="@color/primary_text"
+                    android:textSize="17sp"
+                    android:visibility="visible" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/common_border_color2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="40"
+                android:background="#22ffffff"
+                android:gravity="center"
+                android:orientation="vertical">
+                <!--normal landing-->
+                <LinearLayout
+                    android:id="@+id/ll_normal_landing"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:visibility="visible"
+                    android:weightSum="7">
+
+                    <ImageButton
+                        android:id="@+id/btn_app_share"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:src="@drawable/btn_share" />
+
+                    <ImageButton
+                        android:id="@+id/btn_equalizer"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:src="@drawable/btn_equalizer" />
+
+                    <ImageButton
+                        android:id="@+id/btn_sort_type"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:src="@drawable/btn_sort_type" />
+
+                    <ImageButton
+                        android:id="@+id/btn_play"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:src="@drawable/btn_play" />
+
+                    <ImageButton
+                        android:id="@+id/btn_search"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:src="@drawable/btn_search" />
+
+                    <ImageButton
+                        android:id="@+id/btn_record"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:src="@drawable/btn_record" />
+
+                    <ImageButton
+                        android:id="@+id/btn_setting"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:src="@drawable/btn_setting" />
+
+                </LinearLayout>
+                <!--long press indivisual selection-->
+                <LinearLayout
+                    android:id="@+id/ll_long_single_press"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    >
+
+                    <ImageButton
+                        android:id="@+id/btn_playlist"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:src="@drawable/btn_playlist" />
+
+                    <ImageButton
+                        android:id="@+id/btn_edit"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:visibility="visible"
+                        android:src="@drawable/btn_edit" />
+
+                    <ImageButton
+                        android:id="@+id/btn_ringtone"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:src="@drawable/btn_ringtone" />
+
+                    <ImageButton
+                        android:id="@+id/btn_delete"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:src="@drawable/btn_delete" />
+
+                    <ImageButton
+                        android:id="@+id/btn_share"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:src="@drawable/btn_share" />
+
+                    <ImageButton
+                        android:id="@+id/btn_long_press_close"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:src="@drawable/btn_close_small" />
+
+                </LinearLayout>
+                <!-- after multiple selection-->
+                <LinearLayout
+                    android:id="@+id/ll_long_multiple_menu"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    android:weightSum="4">
+
+                    <ImageButton
+                        android:id="@+id/btn_long_multiple_playlist"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:src="@drawable/btn_playlist" />
+
+                    <ImageButton
+                        android:id="@+id/btn_long_multiple_play"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:src="@drawable/btn_play" />
+
+                    <ImageButton
+                        android:id="@+id/btn_long_multiple_delete"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:src="@drawable/btn_delete" />
+
+                    <ImageButton
+                        android:id="@+id/btn_long_multiple_close"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:src="@drawable/btn_close_small" />
+
+                </LinearLayout>
+                <!-- search-->
+                <LinearLayout
+                    android:id="@+id/ll_search_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginBottom="6dp"
+                    android:background="@drawable/searchbakground"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    android:weightSum="10">
+
+                    <ImageButton
+                        android:id="@+id/btn_search_text"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:src="@drawable/search_without_background" />
+
+                    <EditText
+                        android:id="@+id/et_search_text"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="8"
+                        android:background="@null"
+                        android:hint="Search"
+                        android:imeOptions="actionSearch"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:textColor="@color/primary_text"
+                        android:textColorHint="@color/search_hint_color" />
+
+                    <ImageButton
+                        android:id="@+id/btn_search_close"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:src="@drawable/delete_small" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="4"
+                android:background="@drawable/button_shadow" />
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="320"
+                android:background="@null"
+                android:padding="0dp"
+                android:visibility="visible">
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/song_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+                <xyz.danoz.recyclerviewfastscroller.vertical.VerticalRecyclerViewFastScroller
+                    android:id="@+id/fast_scroller"
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:paddingEnd="4dp"
+                    android:paddingRight="0dp"
+                    android:visibility="gone"
+                    recyclerviewfastscroller:rfs_barColor="@color/fastScrollBarColor"
+                    recyclerviewfastscroller:rfs_handleBackground="@drawable/fast_scroll_handle"
+                    recyclerviewfastscroller:rfs_handleColor="@color/fastScrollHandleColor" />
+
+                <RelativeLayout
+                    android:id="@+id/ll_playlist"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null">
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

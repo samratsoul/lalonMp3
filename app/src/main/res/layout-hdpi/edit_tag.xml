@@ -1,0 +1,147 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/recording_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/ll_edit_tag"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:background="@drawable/main_background"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:weightSum="10">
+
+        <TextView
+            android:id="@+id/edittag_heading"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="Edit Tags"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/edit_tag_heading_text"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp"
+            android:weightSum="5">
+
+            <TextView
+                android:id="@+id/edit_tag_tittle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Tittle"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/edit_tag_text_Size" />
+
+            <EditText
+                android:id="@+id/et_edit_tittle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:backgroundTint="@color/primary_text"
+                android:gravity="center_vertical"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/edit_tag_text_Size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp"
+            android:weightSum="5">
+
+            <TextView
+                android:id="@+id/edit_tag_artist"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Artist"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/edit_tag_text_Size" />
+
+            <EditText
+                android:id="@+id/et_edit_artist"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:backgroundTint="@color/primary_text"
+                android:gravity="center_vertical"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/edit_tag_text_Size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp"
+            android:weightSum="5">
+
+            <TextView
+                android:id="@+id/edit_tag_album"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Album"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/edit_tag_text_Size" />
+
+            <EditText
+                android:id="@+id/et_edit_album"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:backgroundTint="@color/primary_text"
+                android:gravity="center_vertical"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/edit_tag_text_Size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/btn_edit_cancel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Cancel"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/done_text_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/btn_edit_ok"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Done"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/done_text_size"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

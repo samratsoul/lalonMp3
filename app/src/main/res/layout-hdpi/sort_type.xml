@@ -1,0 +1,161 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sort_holder"
+    android:layout_width="match_parent"
+    android:layout_height="500dp"
+    android:background="@drawable/main_background"
+    android:orientation="vertical"
+
+    android:visibility="visible"
+    android:weightSum="11">
+
+    <TextView
+        android:id="@+id/tv_sort_heading"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:text="Sort"
+        android:textColor="@color/primary_text"
+        android:textSize="18sp" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:paddingLeft="10dp"
+        android:weightSum="5">
+
+
+        <RadioButton
+            android:id="@+id/sort_by_name"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:buttonTint="@color/primary_text"
+            android:checked="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Tittle"
+            android:textColor="@color/primary_text" />
+
+        <RadioButton
+            android:id="@+id/sort_by_artist"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:buttonTint="@color/primary_text"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Artist"
+            android:textColor="@color/primary_text" />
+
+        <RadioButton
+            android:id="@+id/sort_by_album"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:buttonTint="@color/primary_text"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Album"
+            android:textColor="@color/primary_text" />
+
+        <RadioButton
+            android:id="@+id/sort_by_duration"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:buttonTint="@color/primary_text"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Duration"
+            android:textColor="@color/primary_text" />
+
+        <RadioButton
+            android:id="@+id/sort_by_date_added"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:buttonTint="@color/primary_text"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Date Added"
+            android:textColor="@color/primary_text" />
+
+    </RadioGroup>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:paddingLeft="10dp"
+        android:weightSum="2">
+
+
+        <RadioButton
+            android:id="@+id/sort_by_assending"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:buttonTint="@color/primary_text"
+            android:checked="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Sort in ascending order"
+            android:textColor="@color/primary_text" />
+
+        <RadioButton
+            android:id="@+id/sort_by_descending"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:buttonTint="@color/primary_text"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Sort in descending order"
+            android:textColor="@color/primary_text" />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/btn_sort_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Cancel"
+            android:textColor="@color/primary_text"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/btn_sort_done"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Done"
+            android:textColor="@color/primary_text"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>
