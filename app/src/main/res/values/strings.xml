@@ -1,0 +1,453 @@
+<resources>
+    <string name="app_name">LalonMp3</string>
+    <string name="facebook_app_id">2859436084304338</string>
+    <string name="fb_login_protocol_scheme">fb2859436084304338</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string-array name="tabsName_English">
+        <item>Genres</item>
+        <item>Playlist</item>
+        <item>Songs</item>
+        <item>Artists</item>
+        <item>Record</item>
+        <item>Albums</item>
+        <item>My Files</item>
+    </string-array>
+    <string-array name="tabsName_Hindi">
+        <item>शैलियों</item>
+        <item>प्लेलिस्ट</item>
+        <item>गीत</item>
+        <item>कलाकार</item>
+        <item>अभिलेख</item>
+        <item>एलबम्स</item>
+        <item>मेरी फ़ाइलें</item>
+    </string-array>
+    <string-array name="tabsName_French">
+        <item>Genres</item>
+        <item>playlist</item>
+        <item>Chansons</item>
+        <item>Artistes</item>
+        <item>Record</item>
+        <item>Albums</item>
+        <item>Mes dossiers</item>
+    </string-array>
+
+    <string-array name="tabsName_German">
+        <item>Genres</item>
+        <item>Wiedergabeliste</item>
+        <item>Lieder</item>
+        <item>Künstler</item>
+        <item>Aufzeichnung</item>
+        <item>Alben</item>
+        <item>Meine Akten</item>
+    </string-array>
+
+    <string-array name="tabsName_Chinese">
+        <item>流派</item>
+        <item>播放列表</item>
+        <item>歌曲</item>
+        <item>艺术家</item>
+        <item>记录</item>
+        <item>相册</item>
+        <item>我的文件</item>
+    </string-array>
+
+
+    <string-array name="tabsName_Spanish">
+        <item>Géneros</item>
+        <item>lista de reproducción</item>
+        <item>canciones</item>
+        <item>artistas</item>
+        <item>Grabar</item>
+        <item>álbumes</item>
+        <item>Mis archivos</item>
+    </string-array>
+    <string-array name="tabsName_Japanese">
+        <item>ジャンル</item>
+        <item>プレイリスト</item>
+        <item>曲</item>
+        <item>アーティスト</item>
+        <item>記録</item>
+        <item>アルバム</item>
+        <item>マイファイル</item>
+    </string-array>
+
+
+    <string-array name="tabsName_Russian">
+        <item>Жанры</item>
+        <item>Список воспроизведения</item>
+        <item>песни</item>
+        <item>Художники</item>
+        <item>Запись</item>
+        <item>Альбомы</item>
+        <item>Мои файлы</item>
+    </string-array>
+
+    <string-array name="tabsName_Arabic">
+        <item>الأنواع</item>
+        <item>قائمة التشغيل</item>
+        <item>الأغاني</item>
+        <item>الفنانين</item>
+        <item>سجل</item>
+        <item>ألبومات</item>
+        <item>ملفاتي</item>
+    </string-array>
+
+    <string-array name="tabsName_Portuguese">
+        <item>géneros</item>
+        <item>Lista de reprodução</item>
+        <item>canções</item>
+        <item>artistas</item>
+        <item>Registro</item>
+        <item>álbuns</item>
+        <item>Meus arquivos</item>
+    </string-array>
+
+    <string name="sure_confirm_text">Are you sure you want to delete nothing else metter...</string>
+    <string name="rating_heading">Enjoying Music?</string>
+    <string name="rating_text_body">Please rate your experience about the Music app.</string>
+    <string name="interstitial_id">/6499/example/interstitial</string>
+    <string name="unknown"><![CDATA[<Unknown>]]></string>
+    <string name="addedToPlaylist">Successfully added</string>
+    <string name="songRemoved">Song removed from playlist</string>
+    <string name="needPermission">Need Permission</string>
+    <string name="privacy_text">We need file permission to collect your music data for read, edit and to save the edited info. As well as need phone permission to pause during call. We are confirming that no background data or call will harm. May you need to provide permission(for Android 6 and upper) on MP3 recording time at recording. This request is only need for first time </string>
+
+    <string-array name="language">
+        <item>English</item>
+        <item>हिंदी</item>
+        <item>français</item>
+        <item>Deutsche</item>
+        <item>中文</item>
+        <item>Español</item>
+        <item>日本語</item>
+        <item>русский</item>
+        <item>العربية</item>
+        <item>português</item>
+    </string-array>
+
+
+    <string-array name="songs">
+        <item>Songs</item>
+        <item>गीत</item>
+        <item>Chansons</item>
+        <item>Lieder</item>
+        <item>歌曲</item>
+        <item>canciones</item>
+        <item>曲</item>
+        <item>песни</item>
+        <item>الأغاني</item>
+        <item>canções</item>
+    </string-array>
+
+
+    <string-array name="Artists">
+        <item>Artists</item>
+        <item>कलाकार</item>
+        <item>Artistes</item>
+        <item>Künstler</item>
+        <item>艺术家</item>
+        <item>artistas</item>
+        <item>アーティスト</item>
+        <item>Художники</item>
+        <item>الفنانين</item>
+        <item>artistas</item>
+    </string-array>
+
+
+    <string-array name="Albums">
+        <item>Albums</item>
+        <item>एलबम्स</item>
+        <item>Albums</item>
+        <item>Alben</item>
+        <item>相册</item>
+        <item>álbumes</item>
+        <item>アルバム</item>
+        <item>Альбомы</item>
+        <item>ألبومات</item>
+        <item>álbuns</item>
+    </string-array>
+
+
+    <string-array name="Setting">
+        <item>Setting</item>
+        <item>सेटिंग</item>
+        <item>Réglage</item>
+        <item>Rahmen</item>
+        <item>设置</item>
+        <item>Ajuste</item>
+        <item>設定</item>
+        <item>настройка</item>
+        <item>ضبط</item>
+        <item>Configuração</item>
+    </string-array>
+
+
+    <string-array name="Rewards">
+        <item>Rewards</item>
+        <item>पुरस्कार</item>
+        <item>Récompenses</item>
+        <item>Belohnungen</item>
+        <item>奖励</item>
+        <item>recompensas</item>
+        <item>リワード</item>
+        <item>Награды</item>
+        <item>المكافآت</item>
+        <item>Recompensas</item>
+    </string-array>
+
+
+    <string-array name="Invite_Friends">
+        <item>Invite Friends</item>
+        <item>मित्रों को आमंत्रित करें</item>
+        <item>Inviter des amis</item>
+        <item>Freunde einladen</item>
+        <item>邀请朋友</item>
+        <item>Invitar a amigos</item>
+        <item>友達を招待</item>
+        <item>Пригласить друзей</item>
+        <item>ادعو أصدقاء</item>
+        <item>Convide amigos</item>
+    </string-array>
+
+
+    <string-array name="Sleep_Timer">
+        <item>Sleep Timer</item>
+        <item>सोने का टाइमर</item>
+        <item>Sleep Timer</item>
+        <item>Sleep-Timer</item>
+        <item>睡眠定时器</item>
+        <item>Tiempo de dormir</item>
+        <item>スリープタイマー</item>
+        <item>Таймер сна</item>
+        <item>مؤقت النوم</item>
+        <item>Despertador</item>
+    </string-array>
+
+
+    <string-array name="Filter_short_Clips">
+        <item>Filter short Clips</item>
+        <item>फिल्टर कम क्लिप</item>
+        <item>Filtre courts Clips</item>
+        <item>Filter kurze Clips</item>
+        <item>过滤短片</item>
+        <item>Filtrar clips cortos</item>
+        <item>	短いクリップにフィルタを適用</item>
+        <item>Фильтр коротких клипов</item>
+        <item>تصفية كليب قصيرة</item>
+        <item>Filtro de clipes curtos</item>
+    </string-array>
+
+
+    <string-array name="Language">
+        <item>Language</item>
+        <item>भाषा</item>
+        <item>La langue</item>
+        <item>Sprache</item>
+        <item>语言</item>
+        <item>Idioma</item>
+        <item>言語</item>
+        <item>язык</item>
+        <item>لغة</item>
+        <item>Língua</item>
+    </string-array>
+
+    <string-array name="Rate_Us">
+        <item>Rate Us</item>
+        <item>हमें रेटिंग दें</item>
+        <item>Évaluez nous</item>
+        <item>Bewerten Sie uns</item>
+        <item>评价我们</item>
+        <item>Nos califica</item>
+        <item>私たちを評価してください</item>
+        <item>Оцените нас</item>
+        <item>قيمنا</item>
+        <item>Nos avalie</item>
+    </string-array>
+
+
+    <string-array name="Done">
+        <item>Done</item>
+        <item>किया हुआ</item>
+        <item>Terminé</item>
+        <item>Erledigt</item>
+        <item>做</item>
+        <item>Hecho</item>
+        <item>終わりました</item>
+        <item>Готово</item>
+        <item>فعله</item>
+        <item>Feito</item>
+    </string-array>
+
+
+    <string-array name="Cancel">
+        <item>Cancel</item>
+        <item>रद्द करना</item>
+        <item>Annuler</item>
+        <item>Stornieren</item>
+        <item>取消</item>
+        <item>Cancelar</item>
+        <item>キャンセル</item>
+        <item>Отмена</item>
+        <item>إلغاء</item>
+        <item>Cancelar</item>
+    </string-array>
+
+    <string-array name="Title">
+        <item>Title</item>
+        <item>शीर्षक</item>
+        <item>Titre</item>
+        <item>Titel</item>
+        <item>标题</item>
+        <item>Título</item>
+        <item>タイトル</item>
+        <item>заглавие</item>
+        <item>عنوان</item>
+        <item>Título</item>
+    </string-array>
+
+
+    <string-array name="Edit_Tags">
+        <item>Edit Tags</item>
+        <item>जोड़ संपादित करें	</item>
+        <item>Étiquettes d‘édition</item>
+        <item>Stichworte bearbeiten</item>
+        <item>编辑标签</item>
+        <item>Editar etiquetas</item>
+        <item>タグを編集</item>
+        <item>Отредактировать тэги</item>
+        <item>تعديل الكلمات الدلالية</item>
+        <item>Editar etiquetas</item>
+    </string-array>
+
+
+    <string-array name="Save_Playlist_as">
+        <item>Save Playlist as</item>
+        <item>प्लेलिस्ट को बचाने के रूप में</item>
+        <item>	Enregistrer Playlist comme</item>
+        <item>Wiedergabeliste speichern unter</item>
+        <item>播放列表另存为</item>
+        <item>Guardar lista de reproducción como</item>
+        <item>プレイリストを保存します</item>
+        <item>Сохранить список воспроизведения, как</item>
+        <item>حفظ قائمة التشغيل كما</item>
+        <item>Guardar lista como</item>
+    </string-array>
+
+
+    <string-array name="Name">
+        <item>Name</item>
+        <item>नाम</item>
+        <item>prénom</item>
+        <item>Name</item>
+        <item>名称</item>
+        <item>Nombre</item>
+        <item>名</item>
+        <item>имя</item>
+        <item>اسم</item>
+        <item>Nome</item>
+    </string-array>
+
+
+    <string-array name="Add_to_Playlist">
+        <item>Add to Playlist</item>
+        <item>प्लेलिस्ट में जोड़ें</item>
+        <item>Ajouter à la playlist</item>
+        <item>Zur Titelliste hinzufügen</item>
+        <item>添加到播放列表</item>
+        <item>Agregar a la lista de reproducción</item>
+        <item>プレイリストに追加する</item>
+        <item>Добавить в плейлист</item>
+        <item>أضف إلى قائمة التشغيل</item>
+        <item>Adicionar à Playlist</item>
+    </string-array>
+
+
+    <string-array name="Equalizer">
+        <item>Equalizer</item>
+        <item>तुल्यकारक</item>
+        <item>but égalisateur</item>
+        <item>Ausgleich</item>
+        <item>均衡器</item>
+        <item>Igualada</item>
+        <item>イコライザ</item>
+        <item>балансир</item>
+        <item>التعادل</item>
+        <item>Equalizador</item>
+    </string-array>
+
+
+    <string-array name="Sort">
+        <item>Sort</item>
+        <item>कम</item>
+        <item>Court</item>
+        <item>Kurz</item>
+        <item>短</item>
+        <item>Corto</item>
+        <item>ショート</item>
+        <item>короткий</item>
+        <item>قصير</item>
+        <item>Baixo</item>
+    </string-array>
+
+
+    <string-array name="Duration">
+        <item>Duration</item>
+        <item>अवधि</item>
+        <item>Durée</item>
+        <item>Dauer</item>
+        <item>为期</item>
+        <item>Duración</item>
+        <item>デュレーション</item>
+        <item>продолжительность</item>
+        <item>مدة</item>
+        <item>Duração</item>
+    </string-array>
+
+
+    <string-array name="Date_added">
+        <item>Date added</item>
+        <item>तारीख संकलित हुई</item>
+        <item>Date ajoutée</item>
+        <item>Datum hinzugefügt</item>
+        <item>添加日期</item>
+        <item>Fecha Agregada</item>
+        <item>追加日</item>
+        <item>Дата Добавлена</item>
+        <item>تم إضافة التاريخ</item>
+        <item>Data adicionada</item>
+    </string-array>
+
+
+    <string-array name="Short_in_Ascending_Order">
+        <item>Sort in ascending order</item>
+        <item>आरोही</item>
+        <item>Ascendant</item>
+        <item>Aufsteigend</item>
+        <item>上升</item>
+        <item>ascendente</item>
+        <item>上昇</item>
+        <item>Восходящий</item>
+        <item>تصاعدي</item>
+        <item>ascendente</item>
+    </string-array>
+
+
+    <string-array name="Short_in_descending_Order">
+        <item>Sort in descending order</item>
+        <item>उतरते</item>
+        <item>descendant</item>
+        <item>absteigend</item>
+        <item>降</item>
+        <item>descendente</item>
+        <item>下行</item>
+        <item>нисходящий</item>
+        <item>تنازلي</item>
+        <item>descendente</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="cancel">Cancel</string>
+
+
+</resources>

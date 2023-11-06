@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/play_list_menu"
+    android:layout_width="@dimen/size_340dp"
+    android:layout_height="450dp"
+    android:background="@drawable/main_background"
+    android:orientation="vertical"
+    android:visibility="visible"
+    android:weightSum="10">
+    <LinearLayout
+        android:id="@+id/playlistcontainer"
+        android:layout_width="@dimen/size_340dp"
+        android:layout_height="450dp"
+        android:orientation="vertical"
+        android:visibility="visible"
+       >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="8">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/playlist_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_playlist_menu_cancel"
+            android:layout_width="@dimen/size_200dp"
+            android:layout_height="@dimen/size_60dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:background="@color/transparent"
+            android:layout_marginTop="@dimen/size_10dp"
+            android:layout_marginBottom="@dimen/size_20dp"
+            android:text="@string/cancel"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/sp_18"
+            android:textStyle="bold"
+
+            />
+    </LinearLayout>
+
+</LinearLayout>

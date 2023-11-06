@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#ffffffff</color>
+
+    <!-- The color of the material notification background -->
+
+    <!-- The color of the material notification background when dimmed -->
+
+    <!-- The color of the material notification background when low priority -->
+
+    <!-- The color of the material notification background for media notifications when no custom
+         color is specified -->
+
+
+    <color name="none">#00000000</color>
+    <color name="primary_text">#FFFFFF</color>
+    <color name="search_hint_color">#ffdcdcdc</color>
+
+    <color name="fastScrollHandleColor">#44ffffff</color>
+    <color name="fastScrollBarColor">#11cecece</color>
+
+
+    <color name="common_border_color">#99ffffff</color>
+    <color name="common_border_color2">#33ffffff</color>
+    <color name="common_border_color3">#CCf2f2f2</color>
+
+    <color name="equalizer_text_color">#ffffffff</color>
+    <color name="circular_image_background">#99727886</color>
+    <color name="circular_image_background_share">#ffEBEBEB</color>
+    <color name="item_click_background">#66000000</color>
+
+    <color name="long_select_bakground">#22ffffff</color>
+    <color name="null_color">#00000000</color>
+    <color name="border_black">#99000000</color>
+    <color name="common_border_color4">#1Affffff</color>
+    <color name="primary_text1">#b3b3b3</color>
+    <color name="primary_text2">#ffECECED</color>
+    <color name="share_btn_background">#d2d2d2</color>
+    <color name="search_background">#22ffffff</color>
+    <color name="white">#FFFFFF</color>
+    <color name="semi_transparent">#66212121</color>
+    <color name="semi_transparent_album">#22212121</color>
+    <color name="transparent">#00000000</color>
+    <color name="dark_background">#131313</color>
+
+</resources>

@@ -1,0 +1,83 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    compileSdkVersion 29
+    defaultConfig {
+        applicationId "com.mp3.dj.music.player"
+        minSdkVersion 19
+        targetSdkVersion 29
+        versionCode 114
+        versionName "1.1.4"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    flavorDimensions "default"
+
+    productFlavors {
+        pro {
+            applicationId "com.mp3.dj.music.player"
+            buildConfigField 'boolean', 'IS_PROD', 'true'
+            versionName defaultConfig.versionName
+        }
+    }
+
+    applicationVariants.all { variant ->
+        variant.outputs.all { output ->
+            def project = "LalonMp3"
+            def SEP = "_"
+            def version = variant.versionName
+            def newApkName = project + SEP + version + ".apk"
+
+            outputFileName = newApkName
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+}
+
+
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    //implementation 'com.google.firebase:firebase-ads:17.2.0'
+    testImplementation 'junit:junit:4.12'
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation "com.google.android.material:material:$rootProject.materialVersion"
+    implementation 'xyz.danoz:recyclerviewfastscroller:0.1.3'
+    // Lifecycle components
+    implementation "androidx.lifecycle:lifecycle-extensions:$rootProject.archLifecycleVersion"
+    //kapt "androidx.lifecycle:lifecycle-compiler:$rootProject.archLifecycleVersion"
+    androidTestImplementation "androidx.arch.core:core-testing:$rootProject.androidxArchVersion"
+    implementation 'com.google.android.play:core:1.9.0'
+    implementation 'com.google.code.gson:gson:2.6.1'
+    //circular imageivew library
+    implementation 'de.hdodenhof:circleimageview:3.0.2'
+    implementation files('libs/MyID3_for_Android.jar')
+    implementation 'com.android.support:multidex:1.0.3'
+    //Ad mobe
+    implementation 'com.google.android.gms:play-services-ads:19.6.0'
+
+    implementation 'com.facebook.android:facebook-android-sdk:[5,6)'
+
+
+
+}

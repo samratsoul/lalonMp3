@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "368880582861",
+    "firebase_url": "https://di-tune-music.firebaseio.com",
+    "project_id": "di-tune-music",
+    "storage_bucket": "di-tune-music.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:368880582861:android:c97b62db89af09bc3a2984",
+        "android_client_info": {
+          "package_name": "com.mp3.dj.music.player"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "368880582861-4pciqij0gend3i1qfr30ao4a9frvcaha.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mp3.dj.music.player",
+            "certificate_hash": "4c23ac268c7b757a968cd36e59d3a1eff4224043"
+          }
+        },
+        {
+          "client_id": "368880582861-j8dka5e9r2ms1m2rv08un5ohm5cv72ip.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1ph2XWuaK1gib-jq5rf26ePH6t08aVuI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "368880582861-j8dka5e9r2ms1m2rv08un5ohm5cv72ip.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

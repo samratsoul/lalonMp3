@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/common_border_color2" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recording_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@null"
+        android:paddingTop="5dp"></androidx.recyclerview.widget.RecyclerView>
+    <!--
+        <xyz.danoz.recyclerviewfastscroller.vertical.VerticalRecyclerViewFastScroller
+            android:id="@+id/fast_scroller"
+            android:layout_width="24dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+
+            android:layout_alignParentRight="true"
+            android:paddingEnd="4dp"
+            android:paddingRight="4dp"
+            recyclerviewfastscroller:rfs_barColor="@color/fastScrollBarColor"
+            recyclerviewfastscroller:rfs_handleBackground="@drawable/fast_scroll_handle"
+            recyclerviewfastscroller:rfs_handleColor="@color/fastScrollHandleColor" />-->
+</RelativeLayout>
+
