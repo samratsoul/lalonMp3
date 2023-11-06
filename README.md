@@ -2,6 +2,10 @@
 Playstore Link:
 https://play.google.com/store/apps/details?id=com.mp3.dj.music.player
 
+Demo:
+https://youtube.com/shorts/5pI2q3srum0
+
+
 The app was modified later but I lost the modified code. 
 Please feel free to use the code and your contribution is most welcome.
 
